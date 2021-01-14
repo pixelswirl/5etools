@@ -1,0 +1,264 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalesoftheOldMargreve",
+				"abbreviation": "TotOM",
+				"full": "Tales of the Old Margreve",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1610598300,
+		"dateLastModified": 1610598300
+	},
+	"monster": [
+		{
+			"name": "Hollow Man",
+			"source": "TalesoftheOldMargreve",
+			"page": 60,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "8d10 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"skill": {
+				"athletics": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing  slashing"
+					],
+					"note": "from nonmagical weapons that aren't adamantine",
+					"cond": true
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Animate Wood Ward (1/Day)",
+					"entries": [
+						"The Hollow Man can animate one wood ward that it can see and is within 60 feet of it. The wood ward follows simple instructions from the Hollow Man."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The Hollow Man is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Hollow Man has advantage on saving throws against spells or other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Hollow Man's attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Hollow Man makes two slam attacks or two weapon attacks with Harvester."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Harvester",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Singing Tree",
+			"source": "TalesoftheOldMargreve",
+			"page": 61,
+			"size": "L",
+			"type": "plant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "6d12 + 24"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 14,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Druidic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Thirteen Heads",
+					"entries": [
+						"The tree begins the adventure with a single mummified head and then adds another for each successful mission the Hollow Man carries out. Instead of targeting the creature, opponents can target the heads. Each head has AC 13 and 5 hit points. Damage to the heads does not reduce the Singing Tree's hit points. Without any heads, the Singing Tree cannot use Sing or Weep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Singing Tree makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and a",
+						"Medium or smaller target is {@condition grappled} (escape {@dc 12}).",
+						"Until the grapple ends, the target is also {@condition restrained} and takes 5 ({@damage 1d6 + 2}) bludgeoning damage at the start of each of its turns as the Singing Tree constricts it."
+					]
+				},
+				{
+					"name": "Weep {@recharge 5}",
+					"entries": [
+						"The Singing Tree casts conjure animals, requiring no components. The Singing Tree does not need to maintain concentration for the summoned animals to remain friendly to it."
+					]
+				},
+				{
+					"name": "Sing",
+					"entries": [
+						"The Singing Tree's song targets a creature within 45 feet that can hear it. The target must make a successful {@dc 13} Wisdom save or be affected as if by the confusion spell. The target can repeat the save at the end of its turn. The effect ends on a successful save or if the Singing Tree stops singing. While singing, the tree can take other actions. A creature that saves is immune to this effect for the next 24 hours."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
